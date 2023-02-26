@@ -22,7 +22,7 @@ function PostData() {
       // make axios post request
       await axios({
         method: "post",
-        url: "http://localhost:4040/create",
+        url: "https://instaclone-6ce3.onrender.com/create",
         data: loginFormData,
         headers: { "Content-Type": "multipart/form-data" },
       });

@@ -73,7 +73,11 @@ app.get("/profile", async (req, res) => {
 });
 
 app.get("/", async (req, res) => {
-  res.send("Server rendered");
+  try{
+    res.send("Server Access");
+  } catch(error){
+    res.send(error);
+  }
 });
 
 const port = process.env.PORT || 8080;

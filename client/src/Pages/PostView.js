@@ -12,7 +12,7 @@ import axios from 'axios'
 export default function PostView() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:4040/profile').then(res=>{
+    axios.get('https://instaclone-6ce3.onrender.com/profile').then(res=>{
       setData(res.data)
       // console.log(res.data);
     }).catch(err=>{

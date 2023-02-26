@@ -72,6 +72,9 @@ app.get("/profile", async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) => {
+  res.send("Server rendered");
+});
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
